@@ -1,13 +1,11 @@
 header
     position: relative
-
 nav
     position: fixed
     height: 50px
     width: 100%
     background-color: #212121
     z-index: 5
-
 .menu
     display: flex
     justify-content: space-between
@@ -15,15 +13,18 @@ nav
     padding: 13px 70px
     height: 50px
     margin: 0 auto
-
-.menu_item
-    border-right: dotted 2px black
-    padding-right: 28px
-
-.menu_link
-    color: white
-    font-size: 15px
-    line-height: 14px
+    &_item
+        border-right: dotted 2px black
+        padding-right: 28px
+        &:last-child
+            border-right: none
+    &_link
+        color: white
+        font-size: 15px
+        line-height: 14px
+        &:hover
+            background-color: $main_color
+            text-decoration: none
 
 .subheader
     position: absolute
@@ -75,6 +76,7 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    +btn_hover
 
 .promo
     min-height: 840px
@@ -123,34 +125,32 @@ nav
     +btn_hover
 
 .reason
-    height: 1000px
-
-
-.reason_header
-    margin: 80px auto 0 auto
-    padding: 6px 11px 9px 13px
-    width: 112px
-    height: 24px
-    background-color: #000000
-    font-size: 11px
-    color: #ffffff
-    font-weight: 300
-    text-align: center
-    text-transform: uppercase
-
-.reason_work
-    margin-top: 38px
-    height: 54px
-    font-size: 38px
-    line-height: 48px
-    color: #222222
-    font-weight: 400
-    text-align: center
-
-.reason .reason_block
-    margin: 40px auto 67px auto
-    display: flex
-    height: 114px
+    // height: 1000px
+    &_header
+        margin: 80px auto 0 auto
+        padding: 6px 11px 9px 13px
+        width: 112px
+        height: 24px
+        background-color: #000000
+        font-size: 11px
+        color: #ffffff
+        font-weight: 300
+        text-align: center
+        text-transform: uppercase
+    &_work
+        margin-top: 38px
+        height: 54px
+        font-size: 38px
+        line-height: 48px
+        color: #222222
+        font-weight: 400
+        text-align: center
+    &_block
+        margin-top: 35px
+        display: flex
+        img
+            width: 113px
+            height: 113px
 
 // .col-md-6
 // 	display: flex
@@ -416,7 +416,7 @@ p
             width: 32px
             height: 32px
             background-color: black
-			I
+            I
             justify-content: center
             align-items: center
             color: #ffffff
@@ -454,7 +454,7 @@ p
         display: flex
         justify-content: space-between
         img
-			apple store
+            apple store
             display: flex
             width: 100px
             justify-content: space-between

@@ -1,1 +1,95 @@
-@media (max-width: 1200)
+@media ( max-width: 1200px )
+    .menu
+        &_item
+            padding-right: 15px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .mobile
+        &_item
+            max-width: 100%
+@media ( max-width: 991px )
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 20px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 26px
+    .subheader
+        &_btn
+            margin-top: 24px
+            width: 100%
+            height: 40px
+    .reason
+        &_block
+            flex-direction: column
+            align-items: center
+        &_text
+            margin-top: 20px
+@media ( max-width: 767px )
+    .menu
+        position: fixed
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        flex-direction: column
+        height: 100vh
+        width: 50%
+        background-color: rgba(0, 0, 0, 0.8)
+        padding: 13px 20px
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px
+        &_link
+            font-size: 20px
+    .humburger
+        display: block
+        position: absolute
+        right: 10px
+        width: 26px
+        top: 50%
+        transform: translateY(-50%)
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+
+
+
+
+
+
+
+
