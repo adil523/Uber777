@@ -1,0 +1,37 @@
+.sidpanel {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 340px;
+    width: 24px;
+    top: 230px;
+    left: 50px;
+    z-index: 3;
+    color: white;
+    align-items: center;
+    a {
+        transform: rotate(90deg);
+        svg {
+            &:hover {
+                path {
+                    fill: red;
+                    transition: all .6s;
+                }
+            }
+        }
+    }
+    &__divider {
+        width: 2px;
+        height: 70px;
+        border: 2px solid;
+        margin-bottom: 40px;
+    }
+    &__text {
+        span {
+            display: block;
+            width: 148px;
+            transform: rotate(-90deg);
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url(../img/IMG_2251.JPG) no-repeat 50%/cover;
+    padding-top: 540px;
+    &__title {
+        width: 535px;
+        padding-top: 9px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        color: #000000;
+        align-items: center;
+
+    }
+    &__link {
+        line-height: 21px;
+        font-weight: bold;
+        color: #ffffff;
+        &:hover {
+            text-decoration: none;
+            color: red;
+            transition: all .6s;
+        }
+    }
+}
