@@ -1,8 +1,9 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url(../img/IMG_2251.JPG) no-repeat 50%/cover;
-    padding-top: 540px;
+    background: url(../img/IMG_2251-min.JPG) no-repeat 50%/cover;
+    padding-top: 50vh;
+    // padding-bottom: 20px;
     &__title {
         width: 535px;
         padding-top: 9px;

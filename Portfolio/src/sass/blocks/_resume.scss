@@ -1,0 +1,47 @@
+.resume {
+    .resume__descr {
+        display: grid;
+        position: relative;
+    }
+    &__title {
+        color: black;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        position: relative;
+        color: black;
+        margin: 0 auto;
+        @include before_circle;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 425px 425px;
+        justify-content: space-around;
+    }
+    &__column {
+        padding-top: 60px;
+    }
+    &__item {
+        display: grid;
+        &-head {
+            display: grid;
+            grid-template-columns: 36px 260px;
+        }
+        &-icon {
+            position: relative;
+            @include before_circle;
+            &:before {
+                // top: -40%;
+                left: -20px;
+            }
+            }
+            &-location {
+                grid-column: 2/3;
+            }
+            &-body {
+                margin-bottom: 50px;
+            }
+        }
+        
+    }
+

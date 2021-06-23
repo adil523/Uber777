@@ -1,0 +1,58 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+.sidpanel {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo .title_fz48 {
+        // font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .promo {
+        padding-top: 65vh;
+            &__title {
+            width: 100%;
+            font-size: 32px;
+            }
+    }
+    .about {
+        padding: 25px 0; 
+            &__wrapper {
+                grid-template-columns: 355px;
+                padding: 10px;
+            } 
+            &__skills {
+                grid-template-columns: 355px;
+            }
+            &__title {
+                font-size: 37px;
+            }
+            &__skills {
+                padding: 0 10px;
+            }
+            &-item {
+                grid-template-columns: 40px 270px;
+                column-gap: 0px;
+            }
+            
+    }
+}
